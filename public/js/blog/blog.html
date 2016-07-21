@@ -1,0 +1,23 @@
+<div class="blogBackground">
+  <div class="blogTitle">
+    <h1>Follow Our Journey</h1>
+  </div>
+  <hr>
+
+  <blog-directive inside-blogs="blogs" blog-filter="title" toggle-order="blogSort"></blog-directive>
+
+
+  <!-- BLOG NAVIGATION BAR -->
+  
+  <blog-directive-search title="title" toggle-order="blogSort"></blog-directive-search>
+
+  <div class="subscribeBox">
+    <h3>GET UPRISING NEWS</h3>
+    <p>News and Updates, delivered straight to your inbox.</p>
+    <input placeholder="Email Address" ng-model="user.emailAddress">
+    <button ng-click="addEmails(user)">Sign Up!</button>
+
+  </div>
+
+</div>
+

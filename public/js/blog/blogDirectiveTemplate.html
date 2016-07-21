@@ -1,0 +1,12 @@
+<div class="blogPost" ng-repeat="blog in blogs | filter: blogFilter | orderBy : toggleOrder">
+  <div class="blogPostTitle">
+  	<h2>{{ blog.title }}</h2>
+  </div>
+    <p class="blogDateAuthor">
+  			{{ blog.date }}  /  {{ blog.author }}
+    </p>
+  <div class="blogText">
+  		 {{ blog.content }}
+  </div>
+
+</div>
